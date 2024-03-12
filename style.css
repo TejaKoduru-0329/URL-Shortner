@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eaecee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-shadow: 7px 7px 17px #c1c8d3, -7px -7px 17px #fff;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 60vw;
+    
+}
+
+label{
+    font-size: 2rem;
+    padding:5px;
+    color: black;
+}
+
+#url{
+    padding: 8px;
+    border-radius: 7px;
+    background-color: transparent;
+    box-shadow: 7px 7px 17px #c1c8d3, -7px -7px 17px #fff;
+    border: 2px solid whitesmoke;
+    width: 50%;
+}
+
+#url::placeholder{
+    text-align: center;
+    font-size: 14px;
+}
+
+button{
+    padding: 8px;
+    box-shadow: 7px 7px 17px #c1c8d3, -7px -7px 17px #fff;
+    width: 20%;
+    border-radius: 7px;
+    border: none;
+    background-color: #108D7D;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background: linear-gradient(-45deg, #D000F7, #24BAE3);
+    color: black;
+}
+
+
+#result{
+    padding: 10px;
+    display: block;
+    flex-direction: column;
+    color: black;
+    
+
+}
+p{
+    color: black;
+}
+
+/*-------------Media---queries----------------------*/
+
+@media screen and (max-width: 500px) {
+    label{
+        font-size: 1rem;
+    }
+    #url{
+        width: 100%;
+    }
+    button{
+        width: 60%;
+    }
+  }
+
+@media screen and (max-width: 370px) {
+    
+    label{
+        font-size: 1rem;
+    }
+    #url{
+        width: 100%;
+    }
+    button{
+        width: 60%;
+    }
+  }
